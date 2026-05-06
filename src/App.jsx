@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react";
 // DE OBSERVA — THE HIDDEN WEAPON
 // Replace these with your actual keys
 // ═══════════════════════════════════════════════════════════════
-const GEMINI_API_KEY = "AIzaSyAf8sQ5ZdB6zHMAkP3SwNM777A7rjB65b4";
-const RAPIDAPI_KEY   = "2170425564msh945737f05bf5731p14aaf5jsnf703f244497c";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_KEY;
+const RAPIDAPI_KEY   = import.meta.env.VITE_RAPIDAPI_KEY;
 // ═══════════════════════════════════════════════════════════════
 
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
